@@ -55,7 +55,7 @@ Running "mochaTest:test" (mochaTest) task
 
 Running "run:nativetest" (run) task
 native test running!
-/home/tshao/work/test/grunt/test-project/test/native
+/your/directory/test/native
 Running main() from gtest_main.cc
 [==========] Running 2 tests from 1 test case.
 [----------] Global test environment set-up.
@@ -71,4 +71,3 @@ Running main() from gtest_main.cc
 [  PASSED  ] 2 tests.
 
 Done.
-
