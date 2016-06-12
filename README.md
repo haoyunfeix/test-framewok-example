@@ -29,3 +29,46 @@ https://www.npmjs.com/package/grunt-contrib-jshint
 this could run shell scripts as a task.  Then gtest could be triggered in this step.
 grunt-run plugin:
 https://www.npmjs.com/package/grunt-run
+
+6. steps to run
+a. download this example and under the directory, npm install all dependencies in the package.json file.
+Download gtest and compile it as a separate lib, and then change the nativetest.sh inside test/native directory
+to use the actual gtest lib in your machine.
+b. type "grunt" under the directory. And you will see:
+Running "concat:dist1" (concat) task
+
+Running "concat:dist2" (concat) task
+
+Running "jshint:all" (jshint) task
+>> 5 files lint free.
+
+Running "mochaTest:test" (mochaTest) task
+
+
+  Test add function
+    ✓ 1+1 = 2 check
+    ✓ -1+1=0 check
+
+
+  2 passing (4ms)
+
+
+Running "run:nativetest" (run) task
+native test running!
+/home/tshao/work/test/grunt/test-project/test/native
+Running main() from gtest_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from AddTest
+[ RUN      ] AddTest.Positive
+[       OK ] AddTest.Positive (0 ms)
+[ RUN      ] AddTest.Nagetive
+[       OK ] AddTest.Nagetive (0 ms)
+[----------] 2 tests from AddTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 2 tests.
+
+Done.
+
