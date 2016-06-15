@@ -1,5 +1,5 @@
 # test-framewok-example
-a simpe example to describe the test framework
+a simpe example to describe how to setup the test framework
 
 This example introduces how to use grunt + mocha + chai + gtest to take unit test for both nodejs code and native code.
 
@@ -32,6 +32,7 @@ https://www.npmjs.com/package/grunt-run</br>
 
 6. steps to run</br>
 a. download this example and under the directory, npm install all dependencies in the package.json file.
+You may only need to npm install grunt globally first and then run "npm install" under the directory.
 Download gtest and compile it as a separate lib, and then change the nativetest.sh inside test/native directory
 to use the actual gtest lib in your machine.</br>
 b. type "grunt" under the directory. And you will see:</br>
