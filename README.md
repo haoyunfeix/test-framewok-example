@@ -68,4 +68,5 @@ b. type "grunt" under the directory. And you will see:</br>
 
   Done.</br>
 
+  Note: You can also run a single task, for example "grunt run:nativetest" will only take the native test.
   
