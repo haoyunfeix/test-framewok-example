@@ -30,7 +30,7 @@ this could run shell scripts as a task.  Then gtest could be triggered in this s
 grunt-run plugin:</br>
 https://www.npmjs.com/package/grunt-run</br>
 
-## steps to run ##
+## Steps to run ##
 a. download this example and under the directory, npm install all dependencies in the package.json file.
 You may only need to npm install grunt globally first and then run "npm install" under the directory.
 Download gtest and compile it as a separate lib, and then change the nativetest.sh inside test/native directory
