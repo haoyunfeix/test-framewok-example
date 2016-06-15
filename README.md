@@ -72,3 +72,8 @@ Running main() from gtest_main.cc</br>
 [  PASSED  ] 2 tests.</br>
 
 Done.</br>
+
+7. run a single task</br>
+You can only run a single task configured above. For example use the fowllowing comd to  run the native test only:
+grunt run:nativetest
+  
