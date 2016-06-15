@@ -36,44 +36,36 @@ You may only need to npm install grunt globally first and then run "npm install"
 Download gtest and compile it as a separate lib, and then change the nativetest.sh inside test/native directory
 to use the actual gtest lib in your machine.</br>
 b. type "grunt" under the directory. And you will see:</br>
-Running "concat:dist1" (concat) task</br>
+  Running "concat:dist1" (concat) task</br>
+  Running "concat:dist2" (concat) task</br>
+  Running "jshint:all" (jshint) task</br>
+  >> 5 files lint free.</br>
 
-Running "concat:dist2" (concat) task</br>
-
-Running "jshint:all" (jshint) task</br>
->> 5 files lint free.</br>
-
-Running "mochaTest:test" (mochaTest) task</br>
-
+  Running "mochaTest:test" (mochaTest) task</br>
 
   Test add function</br>
     ✓ 1+1 = 2 check</br>
     ✓ -1+1=0 check</br>
 
-
   2 passing (4ms)</br>
 
+  Running "run:nativetest" (run) task</br>
+  native test running!</br>
+  /your/directory/test/native</br>
+  Running main() from gtest_main.cc</br>
+  [==========] Running 2 tests from 1 test case.</br>
+  [----------] Global test environment set-up.</br>
+  [----------] 2 tests from AddTest</br>
+  [ RUN      ] AddTest.Positive</br>
+  [       OK ] AddTest.Positive (0 ms)</br>
+  [ RUN      ] AddTest.Nagetive</br>
+  [       OK ] AddTest.Nagetive (0 ms)</br>
+  [----------] 2 tests from AddTest (0 ms total)</br>
 
-Running "run:nativetest" (run) task</br>
-native test running!</br>
-/your/directory/test/native</br>
-Running main() from gtest_main.cc</br>
-[==========] Running 2 tests from 1 test case.</br>
-[----------] Global test environment set-up.</br>
-[----------] 2 tests from AddTest</br>
-[ RUN      ] AddTest.Positive</br>
-[       OK ] AddTest.Positive (0 ms)</br>
-[ RUN      ] AddTest.Nagetive</br>
-[       OK ] AddTest.Nagetive (0 ms)</br>
-[----------] 2 tests from AddTest (0 ms total)</br>
+  [----------] Global test environment tear-down</br>
+  [==========] 2 tests from 1 test case ran. (0 ms total)</br>
+  [  PASSED  ] 2 tests.</br>
 
-[----------] Global test environment tear-down</br>
-[==========] 2 tests from 1 test case ran. (0 ms total)</br>
-[  PASSED  ] 2 tests.</br>
+  Done.</br>
 
-Done.</br>
-
-7. run a single task</br>
-You can only run a single task configured above. For example use the fowllowing comd to  run the native test only:
-grunt run:nativetest
   
