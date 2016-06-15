@@ -1,14 +1,14 @@
-# test-framewok-example
+# Test Framewok Example
 a simpe example to describe how to setup the test framework
 
 This example introduces how to use grunt + mocha + chai + gtest to take unit test for both nodejs code and native code.
 
-1. grunt
+## Grunt ##
 is a javascript task runner, is used to control the work flow, plugins are added to it to perform different tasks. Mocha, chai and gtests are all enabled by plugins.
 Links:</br>
 http://gruntjs.com/
 
-2. mocha
+## Mocha ##
 is a nodejs test framework, and also has mocha plugin for grunt.
 useful links:</br>
 https://github.com/mochajs/mocha</br>
@@ -16,21 +16,21 @@ http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html</br>
 grunt-mocha-test is the plugin for grunt:</br>
 https://www.npmjs.com/package/grunt-mocha-test</br>
 
-3. chai
+## Chai ##
 Assertion library.
 
-4. jshint
+## Jshint ##
 could verify js files using static check.</br>
 http://jshint.com/docs/</br>
 grunt-contrib-jshint is the grunt plugin:</br>
 https://www.npmjs.com/package/grunt-contrib-jshint</br>
 
-5. run shell scripts</br>
+## Run shell scripts ##
 this could run shell scripts as a task.  Then gtest could be triggered in this step.</br>
 grunt-run plugin:</br>
 https://www.npmjs.com/package/grunt-run</br>
 
-6. steps to run</br>
+## steps to run ##
 a. download this example and under the directory, npm install all dependencies in the package.json file.
 You may only need to npm install grunt globally first and then run "npm install" under the directory.
 Download gtest and compile it as a separate lib, and then change the nativetest.sh inside test/native directory
